@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/estilo.css">
+  <title>Marvel Store</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="./src/assets/marvel store.jfif" id="logo" alt="Logo marvel">
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Loja</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#" class="btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <h2>Heróis em Destaque</h2>
+    <ul class="heroes-list">
+      <li id="hero1">Spider-Man</li>
+      <li id="hero2">Iron Man</li>
+      <li id="hero3">Captain America</li>
+      <!-- Add more heroes as needed -->
+    </ul>
+  </section>
+
+  <section class="carousel-section">
+    <div class="carousel">
+      <button id="prevBtn">Anterior</button>
+      <div class="carousel-images">
+        <img src="./src/assets/spider.jfif" alt="Homem-Aranha">
+        <img src="./src/assets/iron man.jfif" alt="Homem de Ferro">
+        <img src="./src/assets/capitao america.jfif" alt="Capitão América">
+        <!-- Add more images as needed -->
+      </div>
+      <button id="nextBtn">Próximo</button>
+    </div>
+  </section>
+
+  <section class="home">
+    <div class="home-content">
+      <div class="home-text">
+        <h1>Brinquedos para Todos os Públicos</h1>
+        <h2 class="subtitle">Heróis de Verdade</h2>
+        <p>Toda experiência é algo para validar.</p>
+        <button class="btn">Vamos Comprar</button>
+      </div>
+      <div class="home-image" onclick="playAudio()">
+        <img src="./src/assets/store marvel 2.jfif" alt="Marvel Store">
+      </div>
+    </div>
+  </section>
+
+  <div id="heroCount">Número de Heróis: 3</div>
+
+  <audio id="musica" loop>
+    <source src="./src/audio/corrida.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="./src/js/script.js"></script>
+</body>
+
+</html>
